@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Task - 5</title>
+        <style>
+            .c1{
+              border: 1px solid black;
+            }
+            </style>
+    </head>
+    <body>
+        <a target="_self" href="../index.html"><h2>Index Page</h2></a>
+        <h2>HTML Task 5</h2>
+    <h1 style="color: blue; text-align: center;">Registration form</h1>
+    <table class="c1" style="height: fit-content;width: fit-content; border-collapse: collapse; margin-left: auto; margin-right: auto;">
+        <form action="">
+            <tr class="c1">
+                <td class="c1" style="text-align: center;">
+                    <label for="fn"><b>First Name</b></label>
+                </td>
+                <td class="c1">
+                    <input style="width: 382px;" type="text" name = "fn"/>
+                </td>
+            </tr>
+            <tr class="c1">
+                <td class="c1" style="text-align: center;">
+                    <label for="ln"><b>Last Name</b></label>
+                </td>
+                <td class="c1">
+                    <input style="width: 382px;" type="text" name = "ln"/>
+                </td>
+            </tr>
+            <tr class="c1" style="text-align: center;">
+                <td class="c1">
+                    <label for="em"><b>Email</b></label>
+                </td>
+                <td class="c1">
+                    <input style="width: 382px;" type="email" name = "em"/>
+                </td>
+            </tr>
+            <tr class="c1" style="text-align: center;">
+                <td class="c1">
+                    <label for="pwd"><b>Password</b></label>
+                </td>
+                <td class="c1">
+                    <input style="width: 382px;" type="password" name = "pwd"/>
+                </td>
+            </tr>
+            <tr class="c1" style="text-align: center;">
+                <td class="c1">
+                    <label for="rpwd"><b>Re-enter Password</b></label>
+                </td>
+                <td class="c1">
+                    <input style="width: 382px;" type="password" name = "rpwd"/>
+                </td>
+            </tr>
+            <tr class="c1">
+                <th rowspan="2" class="c1">
+                    <label for="gn"><b>Gender:</b></label>
+                </th>
+                <td class="c1">
+                    <input type="radio" name="gender" id="gn"/>Male
+                </td>
+            </tr>
+            <tr class="c1">
+                <td class="c1">
+                    <input type="radio" name="gender" id="gn"/>Female
+                </td>
+            </tr>
+            <tr class="c1">
+                <td class="c1" style="text-align: center;">
+                    <label for="age"><b>Age:</b></label>
+                </td>
+                <td class="c1">
+                    <input style="width: 382px;" type="number" name = "age"/>
+                </td>
+            </tr>
+            <tr class="c1">
+                <td class="c1" style="text-align: center;">
+                    <label for="pn"><b>Phone Number</b></label>
+                </td>
+                <td class="c1">
+                    <input style="width: 382px;" type="number" name = "pn"/>
+                </td>
+            </tr>
+            <tr class="c1">
+                <td class="c1" style="text-align: center;">
+                    <label for="add"><b>Address</b></label>
+                </td>
+                <td class="c1">
+                    <textarea name = "add" id = "add" rows="5" cols="50"></textarea>
+                </td>
+                
+            </tr>
+            <tr class="c1">
+                <td class="c1" style="text-align: center;">
+                    <label for="st"><b>State</b></label>
+                </td>
+                <td class="c1">
+                    <input style="width: 382px;" type="text" name = "st"/>
+                </td>
+            </tr>
+            <tr class="c1">
+                <td class="c1" style="text-align: center;">
+                    <label for="ct"><b>Country</b></label>
+                </td>
+                <td class="c1">
+                    <select name="ct" id="ct">
+                        <option>Choose your country</option>
+                        <option>India</option>
+                    </select>
+                </td>
+            </tr>
+            <tr class="c1">
+                <td class="c1" style="text-align: center;">
+                    <label for="lg"><b>Languages known</b></label>
+                </td>
+                <td class="c1">
+                    <input type="checkbox" name="lg" id="lg"/>English
+                    <input type="checkbox" name="lg" id="lg"/>Kannada
+                    <input type="checkbox" name="lg" id="lg"/>Hindi
+                    <input type="checkbox" name="lg" id="lg"/>Telugu
+                </td>
+            </tr>
+            <tr class="c1">
+                <td class="c1" colspan="2">
+                    <input type="checkbox" name="fd" id="fd" checked/>Hereby I declare all the given details are true
+                </td>
+            </tr>
+            <tr class="c1">
+                <td class="c1" colspan="2" style="text-align: right;">
+                    Log in to <a href="https://www.ethnus.com">Ethnus</a> website
+                </td>
+            </tr>
+        </form>
+    </table><br/>
+    <table style="height: fit-content;width: fit-content; border-collapse: collapse; margin-left: auto; margin-right: auto;">
+        <form action="">
+            <tr>
+                <th>
+                    <input type="submit" value="Register">
+                </th>
+            </tr>
+        </form>
+    </table>    
+    </body>
+</html>

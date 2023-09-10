@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Task - 2</title>
+  <style>
+
+    .vert-ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      background-color: rgb(176, 220, 228);
+      position: relative;
+      height: 100%;
+    }
+
+    .vert-li a {
+      display: block;
+      color: rgb(37, 50, 209);
+      padding: 7px 14px;
+      text-decoration: none;
+    }
+
+    .vert-li a.active {
+      background-color: rgb(256, 164, 4);
+      color: white;
+    }
+
+    .vert-li a:hover:not(.active) {
+      background-color: blueviolet;
+      color: white;
+    }
+
+    .c1{
+      position: absolute;
+    }
+
+    /* horizontal nav bar */
+    .hor-ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgb(216, 212, 212);
+    }
+
+    .hor-li {
+      float: left;
+      border-right: 1px solid rgb(37, 50, 209);
+    }
+
+    .hor-li:last-child {
+      border-right: none;
+    }
+
+    .hor-li a {
+      display: block;
+      color: rgb(37, 50, 209);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .hor-li a:hover:not(.active) {
+      background-color: yellow;
+    }
+
+    .hor-li .active {
+      color: white;
+      background-color: rgb(136, 132, 132);
+    }
+
+  </style>
+</head>
+<body>
+  <a target="_self" href="../index.html"><h2>Index Page</h2></a>
+        <h2>CSS Task 2</h2>
+    <table style="border-spacing: 45px;">
+      <tr>
+        <td style="width: 170px; height: 10px"><b>Vertical Navigation Bar</b></td><br/><br/>
+        <td style="width: 170px; height: 10px"><b>Horizontal Navigation Bar</b></td><br/><br/>
+      </tr>
+      <tr>
+        <td class="c1" style="border: 1px solid black; border-collapse: collapse; width: 155px; height: 175px;">
+          <ul class="vert-ul">
+            <li class="vert-li"><a class="active" href="#home">Home</a></li>
+            <li class="vert-li"><a href="#java">Java</a></li>
+            <li class="vert-li"><a href="#css">CSS</a></li>
+            <li class="vert-li"><a href="#html">HTML</a></li>
+            <li class="vert-li"><a href="#bootstrap">Bootstrap</a></li>
+          </ul>
+        </td>
+        <td style="border: 1px solid black; border-collapse: collapse; width: 350px; height: 15px">
+          <ul class="hor-ul">
+            <li class=" hor-li"><a class="active" href="#home">Home</a></li>
+            <li class=" hor-li"><a href="#java">Java</a></li>
+            <li class=" hor-li"><a href="#html">HTML</a></li>
+            <li class=" hor-li"><a href="#css">CSS</a></li>            
+            <li class=" hor-li"><a href="#bootstrap"></a></li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+</body>
+</html>
